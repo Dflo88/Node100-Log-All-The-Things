@@ -4,7 +4,6 @@ const csv = require('csvtojson');
 const csvFilePath = './server/log.csv'
 const app = express();
 
-
 app.use((req, res, next) => {
     // write your logging code here
     const agent = req.headers["user-agent"].replace(/,/g, '');
